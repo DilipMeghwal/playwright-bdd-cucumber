@@ -1,0 +1,31 @@
+{
+  "name": "playwright-bdd-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js e2e/web/features/**/*.feature --require e2e/web/step_definitions/*.ts --require-module ts-node/register -f json:output/json-report/cucumber_report.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DilipMeghwal/playwright-bdd-cucumber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DilipMeghwal/playwright-bdd-cucumber/issues"
+  },
+  "homepage": "https://github.com/DilipMeghwal/playwright-bdd-cucumber#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "@playwright/test": "^1.20.0",
+    "@types/node": "^17.0.21",
+    "playwright": "^1.20.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^1.19.0"
+  }
+}

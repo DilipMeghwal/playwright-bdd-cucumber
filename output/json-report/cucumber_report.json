@@ -1,0 +1,64 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-job-openings-at-manabie;bob-search-job-openings-at-manabie",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Bob search job openings at Manabie",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Bob opens Manabie website",
+            "match": {
+              "location": "e2e\\web\\step_definitions\\steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5205000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Bob goes to Careers section",
+            "match": {
+              "location": "e2e\\web\\step_definitions\\steps.ts:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5023000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._onTimeout (C:\\Workspace\\Learnings\\playwright-bdd-cucumber\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:80:18)\n    at listOnTimeout (node:internal/timers:557:17)\n    at processTimers (node:internal/timers:500:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Bob sees all job openings at Manabie",
+            "match": {
+              "location": "e2e\\web\\step_definitions\\steps.ts:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-job-openings-at-manabie",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Search job openings at Manabie",
+    "tags": [],
+    "uri": "e2e\\web\\features\\search_job_openings_at_manabie.feature"
+  }
+]
