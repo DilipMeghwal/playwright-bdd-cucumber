@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js e2e/web/features/**/*.feature --require e2e/web/step_definitions/*.ts --require-module ts-node/register -f json:output/json-report/cucumber_report.json"
+    "test": "cucumber-js e2e/web/features/**/*.feature --require e2e/web/step_definitions/*.ts --require-module ts-node/register -f json:output/json-report/cucumber_report.json || node cucumber-html-report.js"
   },
   "repository": {
     "type": "git",
